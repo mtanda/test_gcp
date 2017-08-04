@@ -15,7 +15,8 @@ import (
 )
 
 func main() {
-	projectID := flag.String("project", "", "project id")
+	projectID := flag.String("p", "", "project id")
+	flag.Parse()
 	fmt.Printf("project = %s\n", *projectID)
 	ctx := context.Background()
 

@@ -1,0 +1,18 @@
+package: .
+import:
+- package: cloud.google.com/go
+  version: ^0.11.0
+  subpackages:
+  - monitoring/apiv3
+  - '...'
+- package: github.com/golang/protobuf
+  subpackages:
+  - ptypes/timestamp
+- package: golang.org/x/net
+  subpackages:
+  - context
+- package: google.golang.org/genproto
+  subpackages:
+  - googleapis/api/metric
+  - googleapis/api/monitoredres
+  - googleapis/monitoring/v3
